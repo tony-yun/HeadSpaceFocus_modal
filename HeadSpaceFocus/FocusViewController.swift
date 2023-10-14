@@ -43,6 +43,9 @@ class FocusViewController: UIViewController {
         // Layout
         collectionView.collectionViewLayout = layout()
         
+        // 이 View에서 선택이 됐을 때 띄우기
+        collectionView.delegate = self
+        
         updateButtonTitle()
     }
     
@@ -78,5 +81,15 @@ class FocusViewController: UIViewController {
         datasource.apply(snapshot)
         
         updateButtonTitle()
+    }
+}
+
+extension FocusViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = items[indexPath.item]
+        
+        let storyboard = UIStoryboard(name: "QuickFocus", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "QuickFocusListViewController") as! QuickFocusListViewController
+        present(vc, animated: true)
     }
 }

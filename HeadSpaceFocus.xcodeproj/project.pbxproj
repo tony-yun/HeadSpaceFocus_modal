@@ -10,6 +10,7 @@
 		6D0F2F232ADA5A9E00B9C211 /* QuickFocus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0F2F222ADA5A9E00B9C211 /* QuickFocus.storyboard */; };
 		6D0F2F252ADA5AB400B9C211 /* QuickFocusListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F2F242ADA5AB400B9C211 /* QuickFocusListViewController.swift */; };
 		6D0F2F272ADA5CEC00B9C211 /* QuickFocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F2F262ADA5CEC00B9C211 /* QuickFocusCell.swift */; };
+		6D0F2F292ADAE94100B9C211 /* QuickFocusHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F2F282ADAE94100B9C211 /* QuickFocusHeaderView.swift */; };
 		94182266281E55DB00FB38F1 /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182265281E55DB00FB38F1 /* FocusViewController.swift */; };
 		94182268281E583C00FB38F1 /* FocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94182267281E583C00FB38F1 /* FocusCell.swift */; };
 		943BB54328150EFA005A1B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943BB54228150EFA005A1B6E /* AppDelegate.swift */; };
@@ -45,6 +46,7 @@
 		6D0F2F222ADA5A9E00B9C211 /* QuickFocus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuickFocus.storyboard; sourceTree = "<group>"; };
 		6D0F2F242ADA5AB400B9C211 /* QuickFocusListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFocusListViewController.swift; sourceTree = "<group>"; };
 		6D0F2F262ADA5CEC00B9C211 /* QuickFocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFocusCell.swift; sourceTree = "<group>"; };
+		6D0F2F282ADAE94100B9C211 /* QuickFocusHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFocusHeaderView.swift; sourceTree = "<group>"; };
 		94182265281E55DB00FB38F1 /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
 		94182267281E583C00FB38F1 /* FocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCell.swift; sourceTree = "<group>"; };
 		943BB53F28150EFA005A1B6E /* HeadSpaceFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadSpaceFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 				94DA3CA7281ECE3D0054FFC7 /* QuickFocus.swift */,
 				6D0F2F242ADA5AB400B9C211 /* QuickFocusListViewController.swift */,
 				6D0F2F262ADA5CEC00B9C211 /* QuickFocusCell.swift */,
+				6D0F2F282ADAE94100B9C211 /* QuickFocusHeaderView.swift */,
 				943BB54828150EFA005A1B6E /* Main.storyboard */,
 				6D0F2F222ADA5A9E00B9C211 /* QuickFocus.storyboard */,
 				943BB54B28150EFB005A1B6E /* Assets.xcassets */,
@@ -282,6 +285,7 @@
 				943BB57728151183005A1B6E /* Focus.swift in Sources */,
 				943BB54328150EFA005A1B6E /* AppDelegate.swift in Sources */,
 				6D0F2F272ADA5CEC00B9C211 /* QuickFocusCell.swift in Sources */,
+				6D0F2F292ADAE94100B9C211 /* QuickFocusHeaderView.swift in Sources */,
 				94182268281E583C00FB38F1 /* FocusCell.swift in Sources */,
 				943BB54528150EFA005A1B6E /* SceneDelegate.swift in Sources */,
 				94182266281E55DB00FB38F1 /* FocusViewController.swift in Sources */,
