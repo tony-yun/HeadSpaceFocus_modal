@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="07K-eu-e7f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1e4-bZ-jZ8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Focus View Controller-->
+        <!--Focus-->
         <scene sceneID="I8F-xe-kcA">
             <objects>
                 <viewController storyboardIdentifier="FocusViewController" id="07K-eu-e7f" customClass="FocusViewController" customModule="HeadSpaceFocus" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JuC-f0-7M3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="804"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rkw-LG-iBc">
                                     <size key="itemSize" width="412" height="137"/>
@@ -48,7 +49,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ggr-ix-BPR">
-                                                    <rect key="frame" x="262" y="0.0" width="150" height="138.5"/>
+                                                    <rect key="frame" x="262" y="-1" width="150" height="138.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="z3t-gQ-705"/>
                                                     </constraints>
@@ -105,6 +106,7 @@
                             <constraint firstItem="JuC-f0-7M3" firstAttribute="leading" secondItem="xIF-vf-ToX" secondAttribute="leading" id="usJ-er-2pk"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Focus" id="OjD-SX-DpG"/>
                     <connections>
                         <outlet property="collectionView" destination="JuC-f0-7M3" id="Cmm-ht-ysq"/>
                         <outlet property="refreshButton" destination="R1R-Lm-7kb" id="ckb-7z-oLb"/>
@@ -112,16 +114,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqZ-hT-Jgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="834.78260869565224" y="108.48214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5gI-N4-zKw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1e4-bZ-jZ8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="L70-QG-2Yd">
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="07K-eu-e7f" kind="relationship" relationship="rootViewController" id="raq-F2-6b4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaj-DR-Zzi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-75.362318840579718" y="108.48214285714285"/>
         </scene>
     </scenes>
     <resources>
-        <image name="cloud.heavyrain.fill" catalog="system" width="125" height="128"/>
+        <image name="cloud.heavyrain.fill" catalog="system" width="126" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

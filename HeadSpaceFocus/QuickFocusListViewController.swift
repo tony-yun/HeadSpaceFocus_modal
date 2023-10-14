@@ -62,6 +62,9 @@ class QuickFocusListViewController: UIViewController {
         
         // layout
         collectionView.collectionViewLayout = layout()
+        
+        // 상세뷰에서 largeTitle 없애기
+        self.navigationItem.largeTitleDisplayMode = .never
     }
     private func layout() -> UICollectionViewCompositionalLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .estimated(50))
